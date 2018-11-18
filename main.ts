@@ -120,7 +120,14 @@ namespace powerfunctions {
     export function useIrLedPin(pin: AnalogPin) {
         irLed = pin
     }
+    
+    //% block
+    //% weight=25
+    //% advanced=true
+    export function helloWorld() {
 
+    }
+    
     /**
      * Configures a motor direction.
      */
