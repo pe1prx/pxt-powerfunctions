@@ -137,13 +137,14 @@ namespace powerfunctions {
      * Adjust timing configuration to reach the required IR precision.
      * Due to the overhead of function calls the sleep intervals during transmission of IR commands need to be shortened.
      * Timing depends on both the device and the MakeCode version.
+     * Extended timing min for mark en pause to -300 and -500 
      * Recommended default values are -65 micro seconds for the IR mark and -150 micro seconds for the pause.
      */
     //% blockId=pf_adjust_ir_timing
     //% block="adjust timing | of IR mark %markMicroSeconds | and pause %pauseMicroSeconds"
     //% weight=10
-    //% markMicroSeconds.min=-157 markMicroSeconds.max=0
-    //% pauseMicroSeconds.min=-263 pauseMicroSeconds.max=0
+    //% markMicroSeconds.min=-300 markMicroSeconds.max=0
+    //% pauseMicroSeconds.min=-500 pauseMicroSeconds.max=0
     //% advanced=true
     export function adjustIrTiming(
         markMicroSeconds: number = BoardConfig.MarkTimingCorrectionMicroSeconds,
