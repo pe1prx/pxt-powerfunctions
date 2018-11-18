@@ -145,7 +145,7 @@ namespace powerfunctions {
     //% weight=10
     //% markMicroSeconds.min=-300 markMicroSeconds.max=0
     //% pauseMicroSeconds.min=-500 pauseMicroSeconds.max=0
-    //% advanced=true
+    
     export function adjustIrTiming(
         markMicroSeconds: number = BoardConfig.MarkTimingCorrectionMicroSeconds,
         pauseMicroSeconds: number = BoardConfig.PauseTimingCorrectionMicroSeconds)
